@@ -1,6 +1,6 @@
 {
   "name": "@skivvy/skivvy-package-hello-world",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Skivvy example package",
   "main": "index.js",
   "directories": {
