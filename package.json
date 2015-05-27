@@ -1,0 +1,39 @@
+{
+  "name": "@skivvy/skivvy-package-hello-world",
+  "version": "0.0.1",
+  "description": "Skivvy example package",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "test"
+  ],
+  "scripts": {
+    "prepublish": "npm test",
+    "test": "eslint index.js lib test && mocha --reporter spec"
+  },
+  "keywords": [
+    "skivvy-package"
+  ],
+  "author": "Tim Kendrick <timkendrick@gmail.com>",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@skivvy/project-base": "latest",
+    "eslint": "latest",
+    "mocha": "^2.0.0",
+    "chai": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skivvyjs/skivvy-package-hello-world.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skivvyjs/skivvy-package-hello-world/issues"
+  },
+  "homepage": "https://github.com/skivvyjs/skivvy-package-hello-world#readme"
+}
