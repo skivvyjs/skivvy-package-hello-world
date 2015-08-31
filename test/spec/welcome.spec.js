@@ -39,16 +39,16 @@ describe('task:welcome', function() {
 	});
 
 	it('should welcome the user', function() {
-		var originalLog = console.log;
+		var originalLog = process.stdout.write;
 		var logOutput = [];
-		console.log = function mock(string) {
+		process.stdout.write = function mock(string) {
 			logOutput.push(string);
 		};
 		try {
 			task.call(mockApi, {});
 		} finally {
-			console.log = originalLog;
+			process.stdout.write = originalLog;
 		}
-		expect(logOutput).to.eql(['Welcome to Skivvy!']);
+		expect(logOutput).to.eql(['Welcome to Skivvy!\n']);
 	});
 });
